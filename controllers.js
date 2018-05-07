@@ -67,12 +67,12 @@ mailhogApp.controller('MailCtrl', function ($scope, $http, $sce, $timeout) {
   $scope.countSearchMessages = 0
   $scope.totalSearchMessages = 0
 
-  $scope.jim = null
+//  $scope.jim = null
 
   $scope.smtpmech = "NONE"
   $scope.selectedOutgoingSMTP = ""
   $scope.saveSMTPServer = false;
-
+/*
   $scope.getJim = function() {
     var url = $scope.host + 'api/v2/jim'
     $http.get(url).success(function(data) {
@@ -95,7 +95,7 @@ mailhogApp.controller('MailCtrl', function ($scope, $http, $sce, $timeout) {
       $scope.getJim()
     })
   }
-
+*/
   $(function() {
     $scope.openStream();
     if(typeof(Notification) !== "undefined") {
