@@ -1,6 +1,5 @@
 FROM bcit/openshift-nginx
-LABEL maintainer="chriswood@gmail.com"
-LABEL build_id="1567198089"
+<%= snippet('labels', binding) -%>
 
 COPY default.conf /etc/nginx/conf.d/
 COPY style.css /www/css/
